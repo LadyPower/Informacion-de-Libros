@@ -1,0 +1,130 @@
+<odoo>
+    <record id="view_tree_libros" model="ir.ui.view">
+        <field name="name">view.tree.libros</field>
+        <field name="model">reglib.libros</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name= "name"/>
+                <field name= "autor_id"/>
+                <field name= "name_e"/>
+                <field name= "num_e"/>
+                <field name= "publ"/>
+                <field name= "status"/>
+                <field name= "pertc"/>
+                <field name= "coleccion_id"/>
+                <field name= "num_t"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_form_libros" model="ir.ui.view">
+        <field name="name">view.form.libros</field>
+        <field name="model">reglib.libros</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" required="1" placeholder="Título del libro"/>
+                        </h1>
+                    </div>
+                        <group>
+                            <group>
+                                <field name= "autor_id" required="1"/>
+                                <field name= "name_e" required="1"/>
+                                <field name= "num_e"/>
+                                <field name= "publ"/>
+                            </group>
+                            <group>
+                                <field name= "status" required="1"/>
+                                <field name="pertc"/>
+                                <field name= "coleccion_id" attrs="{'invisible': [('pertc','=',False)], 'required': [('pertc','=',True)]}"/>
+                                <field name= "num_t" attrs="{'invisible': [('pertc','=',False)], 'required': [('pertc','=',True)]}"/>
+                            </group>
+                        </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_autores" model="ir.ui.view">
+        <field name="name">view.tree.autores</field>
+        <field name="model">reglib.autores</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name= "name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_form_autores" model="ir.ui.view">
+        <field name="name">view.form.autores</field>
+        <field name="model">reglib.autores</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="name" required="1" placeholder="Nombre del autor"/>
+                    <notebook>
+                        <page name="libros" string="Libros">
+                            <field name="libros_ids" />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_coleccion" model="ir.ui.view">
+        <field name="name">view.tree.coleccion</field>
+        <field name="model">reglib.coleccion</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name= "name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_form_coleccion" model="ir.ui.view">
+        <field name="name">view.form.coleccion</field>
+        <field name="model">reglib.coleccion</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="name" required="1" placeholder="Nombre de la colección"/>
+                    <notebook>
+                        <page name="libros" string="Libros">
+                            <field name="libros_ids" />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_view_libros" model="ir.actions.act_window">
+        <field name="name">Libros</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">reglib.libros</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_reglibros" name="Libros" parent="" action="reg_libros.action_view_libros"/>
+
+    <record id="action_view_autores" model="ir.actions.act_window">
+        <field name="name">Autores</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">reglib.autores</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_regautores" name="Autores" parent="" action="reg_libros.action_view_autores"/>
+
+    <record id="action_view_coleccion" model="ir.actions.act_window">
+        <field name="name">Colecciones</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">reglib.coleccion</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_regcoleccion" name="Colecciones" parent="" action="reg_libros.action_view_coleccion"/>
+</odoo>
