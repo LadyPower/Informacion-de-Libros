@@ -12,6 +12,7 @@ class Libros(models.Model):
     pertc = fields.Boolean("¿Pertenece a una colección?")
     coleccion_id = fields.Many2one('reglib.coleccion', string="Colección")
     num_t = fields.Integer("Número de tomo")
+    portada = fields.Binary('Imagen de Portada')
 
 class Autores(models.Model):
     _name = "reglib.autores"

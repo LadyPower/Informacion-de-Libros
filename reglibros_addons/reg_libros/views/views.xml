@@ -23,6 +23,7 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
+                    <field name="portada" widget="image" class="oe_avatar"/>
                     <div class="oe_title">
                         <h1>
                             <field name="name" required="1" placeholder="Título del libro"/>
@@ -44,6 +45,32 @@
                         </group>
                 </sheet>
             </form>
+        </field>
+    </record>
+
+    <record id="view_kanban_libros" model="ir.ui.view">
+        <field name="name">view.kanban.libros</field>
+        <field name="model">reglib.libros</field>
+        <field name="arch" type="xml">
+            <kanban class="o_libros_kanban">
+                <field name="name"/>                        
+                <field name= "autor_id"/>
+                <field name= "coleccion_id"/>
+                <field name= "portada"/>
+                <template>
+                    <t t-name="kanban-box">
+                        <div class="o_kanban_image">
+                            <field name="portada" widget="image" class="o_kanban_image_fill_left" options="{'zoom': true, 'zoom_delay': 1000, 'background': true, 'preventClicks': false}"/>
+                        </div>
+                        <div class="oe_kanban_details">
+                            <field name="name"/>                        
+                            <field name= "autor_id"/>
+                            <field name= "coleccion_id"/>
+                            <field name= "portada"/>
+                        </div>
+                    </t>
+                </template>
+            </kanban>
         </field>
     </record>
 
@@ -108,7 +135,9 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="menu_reglibros" name="Libros" parent="" action="reg_libros.action_view_libros"/>
+    <menuitem id="menu_infolibros" name="Información de Libros" parent=""/>
+    <menuitem id="menu_libcol" name="Libros y Colecciones" parent="menu_infolibros" action="reg_libros.action_view_libros" sequence= "1"/>
+    <menuitem id="menu_libros" name="Libros" parent="menu_libcol" action="reg_libros.action_view_libros" sequence= "1"/>
 
     <record id="action_view_autores" model="ir.actions.act_window">
         <field name="name">Autores</field>
@@ -117,7 +146,7 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="menu_regautores" name="Autores" parent="" action="reg_libros.action_view_autores"/>
+    <menuitem id="menu_autores" name="Autores" parent="menu_infolibros" action="reg_libros.action_view_autores" sequence="2"/>
 
     <record id="action_view_coleccion" model="ir.actions.act_window">
         <field name="name">Colecciones</field>
@@ -126,5 +155,5 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="menu_regcoleccion" name="Colecciones" parent="" action="reg_libros.action_view_coleccion"/>
+    <menuitem id="menu_coleccion" name="Colecciones" parent="menu_libcol" action="reg_libros.action_view_coleccion" sequence="2"/>
 </odoo>
