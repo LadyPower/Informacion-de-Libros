@@ -5,6 +5,8 @@
     "depends":['base'],
     "data":[
      'views/views.xml',
-     'security/security.xml'   
+     'views/wizards_autores.xml',
+     'security/security.xml',
+     'report/autores.xml'   
     ]
 }

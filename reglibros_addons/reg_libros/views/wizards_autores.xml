@@ -1,0 +1,38 @@
+<odoo>
+    <record id="wizard_autores" model="ir.ui.view">
+        <field name="name">Asistente de Reporte de Autores</field>
+        <field name="model">reglib.impresion</field>
+        <field name="arch" type="xml">
+            <form string="Autores">
+                <field invisible="1" name="state"/>
+                <div states="choose">
+                    <group>
+                        <group>
+                            <field name="autores" string="Autores" required="1"/>
+                        </group>
+                    </group>
+                </div>
+                <div states="get">
+                <group>
+                    <field name="name" colspan="4" invisible="1"/>
+                    <field name="report" filename="name" colspan="4"/>
+                </group>
+                </div>
+                <footer states="choose">
+                    <button name= "imprimir_pdf" string="Exportar PDF" type="object" class="oe_highlight"/>
+                    <!-- <button name="generate_xls_report" string="Exportar EXCEL" type="object" class="oe_highlight"/> -->
+                    <button special="cancel" string="Cancel" class="oe_highlight"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="action_wizard_autores" model="ir.actions.act_window">
+        <field name="name">Asistente de Impresión de Autores</field>
+        <field name="res_model">reglib.impresion</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="wizard_autores"/>
+        <field name="target">new</field>
+    </record>
+    <menuitem id="menu_informes" name="Informes" parent="menu_infolibros" secuence="3"/>
+    <menuitem id="menu_wizard_autores" name="Informes de Autores" parent="menu_informes" action="reg_libros.action_wizard_autores" secuence="1"/>
+</odoo>
