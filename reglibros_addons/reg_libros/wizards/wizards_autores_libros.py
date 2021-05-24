@@ -13,9 +13,10 @@ import shutil
 import base64
 import csv
 import xlwt
+
 _logger = logging.getLogger(__name__)
 
-class Impresion(models.Model):
+class Impresion(models.TransientModel):
     _name = "reglib.impresion"
 
     autores = fields.Many2many('reglib.autores',)

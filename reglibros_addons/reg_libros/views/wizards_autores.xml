@@ -8,7 +8,7 @@
                 <div states="choose">
                     <group>
                         <group>
-                            <field name="autores" string="Autores" required="1"/>
+                            <field name="autores" string="Autores" widget="many2many_tags" required="1"/>
                         </group>
                     </group>
                 </div>
@@ -26,4 +26,13 @@
             </form>
         </field>
     </record>
+    <record id="action_wizard_autores" model="ir.actions.act_window">
+        <field name="name">Asistente de Impresión de Autores</field>
+        <field name="res_model">reglib.impresion</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="wizard_autores"/>
+        <field name="target">new</field>
+    </record>
+    <menuitem id="menu_informes" name="Informes" parent="menu_infolibros" sequence="3"/>
+    <menuitem id="menu_wizard_autores" name="Informes de Autores" parent="menu_informes" action="reg_libros.action_wizard_autores" sequence="1"/>
 </odoo>

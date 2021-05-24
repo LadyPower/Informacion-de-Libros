@@ -151,7 +151,7 @@
         <field name="view_mode">kanban,tree,form</field>
     </record>
 
-    <menuitem id="menu_infolibros" name="Información de Libros" parent=""/>
+    <menuitem id="menu_infolibros" name="Información de Libros" parent="" web_icon="reg_libros,static/description/icon.png"/>
     <menuitem id="menu_libcol" name="Libros y Colecciones" parent="menu_infolibros" action="reg_libros.action_view_libros" sequence= "1"/>
     <menuitem id="menu_libros" name="Libros" parent="menu_libcol" action="reg_libros.action_view_libros" sequence= "1"/>
 
@@ -172,15 +172,4 @@
     </record>
 
     <menuitem id="menu_coleccion" name="Colecciones" parent="menu_libcol" action="reg_libros.action_view_coleccion" sequence="2"/>
-
-    <record id="action_wizard_autores" model="ir.actions.act_window">
-        <field name="name">Asistente de Impresión de Autores</field>
-        <field name="res_model">reglib.impresion</field>
-        <field name="view_mode">form</field>
-        <field name="view_id" ref="wizard_autores"/>
-        <field name="target">new</field>
-    </record>
-
-    <menuitem id="menu_informes" name="Informes" parent="menu_infolibros" secuence="3"/>
-    <menuitem id="menu_wizard_autores" name="Informes de Autores" parent="reg_libros.menu_infolibros" action="reg_libros.action_wizard_autores" secuence="1"/>
 </odoo>
