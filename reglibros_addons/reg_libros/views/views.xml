@@ -23,7 +23,7 @@
         <field name="arch" type="xml">
             <form>
                 <header>
-                    <field name="status" widget="statusbar" statusbar_visible="disponible,agotado"/>
+                    <field name="status" widget="statusbar" statusbar_visible="disponible,agotado" options="{'clickable':'1'}"/>
                 </header>
                 <sheet>
                     <field name="portada" widget="image" class="oe_avatar"/>
@@ -80,7 +80,10 @@
                                     <t t-esc="record.autor_id.value"/>
                             </div>
                                 <div t-if="record.coleccion_id.value">
-                                    <t t-esc="record.coleccion_id.value"/>
+                                   <t t-esc="record.coleccion_id.value"/>
+                                </div>
+                                <div t-else="">
+                                    <b>NO APLICA</b>
                                 </div>
                             </div>
                         </div>

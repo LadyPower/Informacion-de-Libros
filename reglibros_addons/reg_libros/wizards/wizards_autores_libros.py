@@ -27,4 +27,4 @@ class Impresion(models.TransientModel):
     company_id = fields.Many2one('res.company','Company',default=lambda self: self.env.user.company_id.id)
     
     def imprimir_pdf(self):
-        return {'type': 'ir.actions.report','report_name': 'reg_libros.autores','report_type':"qweb-pdf"}
+        return {'type': 'ir.actions.report','report_name': 'reg_libros.autores_variados','report_type':"qweb-pdf"}

@@ -1,0 +1,313 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* reg_libros
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20210510\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-24 01:49+0000\n"
+"PO-Revision-Date: 2021-05-24 01:49+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: reg_libros
+#: model_terms:ir.ui.view,arch_db:reg_libros.layout_autores_variados
+msgid "<b style=\"font-size:20px;\">Libros de Autores Variados</b>"
+msgstr "<b style=\"font-size:20px;\">Varied Authors' Books</b>"
+
+#. module: reg_libros
+#: model_terms:ir.ui.view,arch_db:reg_libros.autores_variados
+#: model_terms:ir.ui.view,arch_db:reg_libros.view_kanban_libros
+msgid "<b>NO APLICA</b>"
+msgstr "<b>DOES NOT APPLY</b>"
+
+#. module: reg_libros
+#: model:ir.model.fields.selection,name:reg_libros.selection__reglib_libros__status__agotado
+msgid "Agotado"
+msgstr "Out sold"
+
+#. module: reg_libros
+#: model:ir.actions.act_window,name:reg_libros.action_wizard_autores
+msgid "Asistente de Impresión de Autores"
+msgstr "Authors Print Wizard"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_libros__autor_id
+#: model_terms:ir.ui.view,arch_db:reg_libros.autores_variados
+msgid "Autor"
+msgstr "Author"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_autores__name
+msgid "Autor del libro"
+msgstr "Book's author"
+
+#. module: reg_libros
+#: model:ir.actions.act_window,name:reg_libros.action_view_autores
+#: model:ir.actions.report,name:reg_libros.action_autores_report
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_impresion__autores
+#: model:ir.ui.menu,name:reg_libros.menu_autores
+#: model_terms:ir.ui.view,arch_db:reg_libros.wizard_autores
+msgid "Autores"
+msgstr "Authors"
+
+#. module: reg_libros
+#: model:ir.actions.report,name:reg_libros.action_autores_variados_report
+msgid "Autores variados"
+msgstr "Varied authors"
+
+#. module: reg_libros
+#: model_terms:ir.ui.view,arch_db:reg_libros.view_kanban_libros
+msgid "Avatar"
+msgstr "Avatar"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_libros__publ
+msgid "Año de publicación"
+msgstr "Year of publication"
+
+#. module: reg_libros
+#: model_terms:ir.ui.view,arch_db:reg_libros.wizard_autores
+msgid "Cancelar"
+msgstr "Cancel"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_libros__coleccion_id
+msgid "Coleccion"
+msgstr "Collection"
+
+#. module: reg_libros
+#: model:ir.actions.act_window,name:reg_libros.action_view_coleccion
+#: model:ir.ui.menu,name:reg_libros.menu_coleccion
+msgid "Colecciones"
+msgstr "Collections"
+
+#. module: reg_libros
+#: model_terms:ir.ui.view,arch_db:reg_libros.autores
+#: model_terms:ir.ui.view,arch_db:reg_libros.autores_variados
+msgid "Colección"
+msgstr "Collection"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_impresion__company_id
+msgid "Company"
+msgstr "Company"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_autores__create_uid
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_coleccion__create_uid
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_impresion__create_uid
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_libros__create_uid
+msgid "Created by"
+msgstr "Created by"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_autores__create_date
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_coleccion__create_date
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_impresion__create_date
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_libros__create_date
+msgid "Created on"
+msgstr "Created on"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_impresion__date_now
+msgid "Date Now"
+msgstr "Date Now"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_autores__display_name
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_coleccion__display_name
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_impresion__display_name
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_libros__display_name
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: reg_libros
+#: model:ir.model.fields.selection,name:reg_libros.selection__reglib_libros__status__disponible
+msgid "Disponible"
+msgstr "Available"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_libros__num_e
+msgid "Edición"
+msgstr "Edition"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_libros__name_e
+#: model_terms:ir.ui.view,arch_db:reg_libros.autores
+#: model_terms:ir.ui.view,arch_db:reg_libros.autores_variados
+msgid "Editorial"
+msgstr "Editorial"
+
+#. module: reg_libros
+#: model_terms:ir.ui.view,arch_db:reg_libros.wizard_autores
+msgid "Exportar PDF"
+msgstr "Export PDF"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_impresion__name
+msgid "File Name"
+msgstr "File Name"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_autores__id
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_coleccion__id
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_impresion__id
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_libros__id
+msgid "ID"
+msgstr "ID"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_libros__portada
+msgid "Imagen de Portada"
+msgstr "Cover image"
+
+#. module: reg_libros
+#: model:ir.ui.menu,name:reg_libros.menu_infolibros
+msgid "Información de Libros"
+msgstr "Books Information"
+
+#. module: reg_libros
+#: model:ir.ui.menu,name:reg_libros.menu_informes
+msgid "Informes"
+msgstr "Reports"
+
+#. module: reg_libros
+#: model:ir.ui.menu,name:reg_libros.menu_wizard_autores
+msgid "Informes de Autores"
+msgstr "Authors' Reports"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_autores____last_update
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_coleccion____last_update
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_impresion____last_update
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_libros____last_update
+msgid "Last Modified on"
+msgstr "Last Modified on"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_autores__write_uid
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_coleccion__write_uid
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_impresion__write_uid
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_libros__write_uid
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_autores__write_date
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_coleccion__write_date
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_impresion__write_date
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_libros__write_date
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: reg_libros
+#: model:ir.actions.act_window,name:reg_libros.action_view_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_autores__libros_ids
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_coleccion__libros_ids
+#: model:ir.ui.menu,name:reg_libros.menu_libros
+#: model_terms:ir.ui.view,arch_db:reg_libros.view_form_autores
+#: model_terms:ir.ui.view,arch_db:reg_libros.view_form_coleccion
+msgid "Libros"
+msgstr "Books"
+
+#. module: reg_libros
+#: model_terms:ir.ui.view,arch_db:reg_libros.layout_autores
+msgid "Libros de"
+msgstr "Books of"
+
+#. module: reg_libros
+#: model:ir.ui.menu,name:reg_libros.menu_libcol
+msgid "Libros y Colecciones"
+msgstr "Books and collections"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_coleccion__name
+#: model_terms:ir.ui.view,arch_db:reg_libros.view_form_coleccion
+msgid "Nombre de la colección"
+msgstr "Collections' name"
+
+#. module: reg_libros
+#: model_terms:ir.ui.view,arch_db:reg_libros.view_form_autores
+msgid "Nombre del autor"
+msgstr "Author's name"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_libros__num_t
+msgid "Número de tomo"
+msgstr "Volume number"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_impresion__report
+msgid "Prepared file"
+msgstr "Prepared file"
+
+#. module: reg_libros
+#: model_terms:ir.ui.view,arch_db:reg_libros.autores
+#: model_terms:ir.ui.view,arch_db:reg_libros.autores_variados
+msgid "Publicación"
+msgstr "Publication"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_impresion__state
+msgid "State"
+msgstr "State"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_libros__status
+#: model_terms:ir.ui.view,arch_db:reg_libros.autores
+#: model_terms:ir.ui.view,arch_db:reg_libros.autores_variados
+msgid "Status"
+msgstr "Status"
+
+#. module: reg_libros
+#: model_terms:ir.ui.view,arch_db:reg_libros.autores
+#: model_terms:ir.ui.view,arch_db:reg_libros.autores_variados
+msgid "Titulo"
+msgstr "Title"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_libros__name
+#: model_terms:ir.ui.view,arch_db:reg_libros.view_form_libros
+msgid "Título del libro"
+msgstr "Book's title"
+
+#. module: reg_libros
+#: model:ir.model.fields.selection,name:reg_libros.selection__reglib_impresion__state__choose
+msgid "choose"
+msgstr "choose"
+
+#. module: reg_libros
+#: model:ir.model.fields.selection,name:reg_libros.selection__reglib_impresion__state__get
+msgid "get"
+msgstr "get"
+
+#. module: reg_libros
+#: model:ir.model,name:reg_libros.model_reglib_autores
+msgid "reglib.autores"
+msgstr "reglib.autores"
+
+#. module: reg_libros
+#: model:ir.model,name:reg_libros.model_reglib_coleccion
+msgid "reglib.coleccion"
+msgstr "reglib.coleccion"
+
+#. module: reg_libros
+#: model:ir.model,name:reg_libros.model_reglib_impresion
+msgid "reglib.impresion"
+msgstr "reglib.impresion"
+
+#. module: reg_libros
+#: model:ir.model,name:reg_libros.model_reglib_libros
+msgid "reglib.libros"
+msgstr "reglib.libros"
+
+#. module: reg_libros
+#: model:ir.model.fields,field_description:reg_libros.field_reglib_libros__pertc
+msgid "¿Pertenece a una colección?"
+msgstr "Does it belong to a collection?"

@@ -7,6 +7,7 @@
      'views/views.xml',
      'views/wizards_autores.xml',
      'security/security.xml',
+     'report/autores_variados.xml',
      'report/autores.xml'   
     ]
 }
