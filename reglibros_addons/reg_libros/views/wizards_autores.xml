@@ -20,7 +20,6 @@
                 </div>
                 <footer states="choose">
                     <button name= "imprimir_pdf" string="Exportar PDF" type="object" class="oe_highlight"/>
-                    <!-- <button name="generate_xls_report" string="Exportar EXCEL" type="object" class="oe_highlight"/> -->
                     <button special="cancel" string="Cancelar" class="oe_highlight"/>
                 </footer>
             </form>
